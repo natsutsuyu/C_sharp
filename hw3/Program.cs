@@ -155,4 +155,31 @@ class Student
         }
         Console.WriteLine("--------------------------");
     }
+    public void AveragePro()
+    {
+        int summ = 0;
+        for(int i= 0; i < marks[0].Length; i++)
+        {
+            summ+=marks[0][i];
+        }
+        Console.WriteLine(summ/ marks[0].Length);
+    }
+    public void AverageAdm()
+    {
+        int summ = 0;
+        for (int i = 0; i < marks[1].Length; i++)
+        {
+            summ += marks[1][i];
+        }
+        Console.WriteLine(summ / marks[1].Length);
+    }
+    public void AverageDes()
+    {
+        int summ = 0;
+        for (int i = 0; i < marks[2].Length; i++)
+        {
+            summ += marks[2][i];
+        }
+        Console.WriteLine(summ / marks[2].Length);
+    }
 }
